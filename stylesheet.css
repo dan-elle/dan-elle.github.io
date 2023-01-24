@@ -101,6 +101,37 @@ body {
 
 .content {
     margin: 1em auto;
+    max-width: 1000px;
+
+}
+
+.project_title {
+    text-align: left;
+    font-family: Tommy;
+    font-weight: normal;
+    font-size: larger;
+}
+
+.projects {
+    display: flex;
+}
+
+.project_content {
+    margin: 1em auto;
+    max-width: 600px;
+    text-align: left;
+    margin-left: 175px;
+}
+
+.project_image {
+    margin-right: 50px;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.project_screenshot {
+    margin: auto;
+    display: block;
 }
 
 .pdf-reader {
@@ -109,12 +140,25 @@ body {
     margin-right: auto;
 }
 
+.homepage-image {
+    width: 30%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 100% 0;
+    margin: auto;
+    display: block;
+    /*curving edges of image*/
+    border-radius: 10%;
+    padding-bottom: 20px;
+}
+
 .about-me-image {
     width: 60%;
     margin: auto;
     display: block;
     /*curving edges of image*/
     border-radius: 10%;
+    padding-bottom: 20px;
 }
 
 /*footer*/
@@ -159,4 +203,8 @@ body {
 
 .email-link {
     text-decoration: none;
+}
+
+.devpost {
+    filter: invert();
 }
