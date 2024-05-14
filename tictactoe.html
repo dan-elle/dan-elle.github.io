@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Danelle D'Souza</title>
+    <title>Danelle D'Souza | TicTacToe</title>
     <link rel="icon" type="image/x-icon" href="/Images/Site_Logo_Transparent.png">
     <meta name="description"
         content="Welcome to my personal page! Here you can find my resume and the projects I'm currently working on.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="ticTacToe.css">
+    <script src="ticTacToe.js" defer></script>
 </head>
 
 <body>
@@ -24,13 +28,30 @@
         <h4 class="subtitle">Computer Engineering Student</h4>
     </header>
     <section>
-        <h2 class="section_title container">Welcome.</h2>
-        <p class="content container">My name is Danelle D'Souza and this page contains some information about me that I
-            thought would be displayed best on a website! Feel free to look around and contact me with any questions
-            using the button at the bottom of any page on this website.</p>
+        <h2 class="section_title container">TicTacToe</h2>
+        <p class="content container">A two-player game of tic-tac-toe. Planning to add a computer player, check back
+            soon!</p>
+    </section>
+    <section class="game">
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="win-message" id="winMessage">
+            <!-- try to get rid of the inline style in the future -->
+            <div data-win-message-text style="color: rgb(101, 34, 56);">X player wins!</div>
+            <button class="restart-button" id="restartButton">Play again!</button>
+        </div>
     </section>
 
-    <img class="homepage-image" src="Images/Homepage.jpg">
+
 </body>
 
 <footer class="main-footer">
@@ -50,8 +71,7 @@
                         src="Images/devpost-logo.png" width="40" height="40" /></a>
             </li>
             <button class="contact-button" type="button">
-                <a class="email-link" href="mailto: danelledbd@gmail.com">Contact me</a>
-            </button>
+                <a class="email-link" href="mailto: danelledbd@gmail.com">Contact me</a></button>
         </ul>
     </div>
 </footer>

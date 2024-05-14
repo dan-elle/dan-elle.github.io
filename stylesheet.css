@@ -5,7 +5,12 @@
     src: url("Fonts/MADETOMMY-Medium.ttf")
 }
 
-* {
+a,
+button {
+    color: initial;
+}
+
+*:not(.bored-buttons) {
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
     color: #c2c0bc;
@@ -42,11 +47,12 @@ body {
 
 .nav a:hover {
     background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
 }
 
 .main-nav {
     text-align: center;
-    font-size: 120%;
+    font-size: 1.5em;
 }
 
 .main-nav li {
@@ -75,6 +81,7 @@ body {
     margin: 0;
     font-family: Tommy;
     font-weight: normal;
+    font-size: 1em;
 }
 
 .larger_title {
@@ -105,6 +112,10 @@ body {
 
 }
 
+.content-center {
+    text-align: center;
+}
+
 .project_title {
     text-align: left;
     font-family: Tommy;
@@ -132,6 +143,10 @@ body {
 .project_screenshot {
     margin: auto;
     display: block;
+}
+
+.boredProject {
+    display: flex;
 }
 
 .pdf-reader {
@@ -195,6 +210,7 @@ body {
     font-size: 16px;
     vertical-align: top;
     font-weight: bold;
+    border-radius: 20px;
 }
 
 .contact-button:hover {
@@ -207,4 +223,37 @@ body {
 
 .devpost {
     filter: invert();
+}
+
+.bored-buttons {
+    text-decoration: none;
+    background-color: rgb(240, 248, 255);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.bored-buttons:hover {
+    background-color: rgba(240, 248, 255, 0.35);
+}
+
+.bored-buttons-container {
+    position: relative;
+    text-align: center;
+}
+
+.tictactoe-image {
+    width: 30%;
+    object-fit: cover;
+    object-position: 100% 0;
+    margin: auto;
+    display: block;
 }
